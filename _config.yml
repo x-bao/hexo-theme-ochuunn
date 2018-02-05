@@ -13,13 +13,13 @@ google_verification: false  # your token
 google_analytics: false   # your id
 
 livere_id: 'city'
-livere_uid: 'your uid'
+livere_uid: 'MTAyMC8zMzg4OC8xMDQ0MQ=='
 
-start_year: 2016
+start_year: 2017
 
 reward_images: # add your qr image
 # - type: '微信'
-#   url: '/img/wechat.png'
+  # url: '/img/wechat.png'
 # - type: '支付宝' 
-#   url: '/img/wechat.png'
+  # url: '/img/wechat.png'
  

@@ -14,15 +14,22 @@ html(lang="zh-CN")
     
     footer.foot
       div.foot-copy
-        if theme.start_year != date(new Date(), 'YYYY')
-          != '&copy; ' + theme.start_year + '-' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
-        else
-          != '&copy; ' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
-        
-        //- 我自己才会显示
-        if config.author === 'Oliver Wang'
-          a(href="http://www.beianbaba.com/icp/ochukai.me" target="view_window" style="color:#fff")
-            != '（鲁ICP备16006255号-1）'
+        p.fooot
+          if theme.start_year != date(new Date(), 'YYYY')
+            != '&copy; ' + theme.start_year + '-' + date(new Date(), 'YYYY') + ' '
+            a(href="https://github.com/x-bao" target="view_window" class="link")
+              != (config.author || config.title)
+          else
+            != '&copy; ' + date(new Date(), 'YYYY') + ' '
+            a(href="https://github.com/x-bao" target="view_window" class="link")
+              != (config.author || config.title)
+          
+          a(href="http://www.miibeian.gov.cn/" target="view_window" style="color: #fff")
+            != theme.site_record
+        p.foot-theme
+          -var hexo = '<a href="https://hexo.io" target="_blank" class="link">Hexo</a>'
+          -var ochuunn = '<a href="https://github.com/x-bao/hexo-theme-ochuunn" target="_blank" class="link">ochuunn</a>'
+          != 'Powered by ' + hexo + ' with Theme ' + ochuunn
             
     include ../plugins/google.pug
     

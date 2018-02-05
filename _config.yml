@@ -17,6 +17,9 @@ livere_uid: 'MTAyMC8zMzg4OC8xMDQ0MQ=='
 
 start_year: 2017
 
+# 备案信息
+site_record: '（鄂ICP备17002258号-2）'
+
 reward_images: # add your qr image
 # - type: '微信'
   # url: '/img/wechat.png'

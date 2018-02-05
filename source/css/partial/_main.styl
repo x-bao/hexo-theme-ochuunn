@@ -38,6 +38,23 @@
   background-color: #399c9c
   line-height: (@height)
   box-sizing: border-box
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .3)
+  
+.foot
+  line-height: 1
+  display: flex
+  justify-content: center
+  text-align: center
+  align-items: center
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .3)
+  
+  .link
+    color: #fff
+    &:hover
+      text-decoration: underline
+
+.foot-theme
+  margin-top: 1rem
 
 .head-title
   font-size-rem(30)
@@ -71,7 +88,7 @@
 
 .comments
   margin: 30px 0
-  padding: 50px
+  padding: 10px 50px
   background-color: #FFFFFF
   border: 1px solid $border-color
 

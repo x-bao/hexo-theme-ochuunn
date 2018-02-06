@@ -1,0 +1,7 @@
+nav.post-nav
+  if page.prev
+    a.nav-item.prev(href = url_for(page.prev.path))
+        i.icon-arrow-left
+  if page.next
+    a.nav-item.next(href = url_for(page.next.path))
+        i.icon-arrow-right

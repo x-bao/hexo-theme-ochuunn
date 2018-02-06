@@ -8,8 +8,9 @@ html.index(lang="zh-CN")
       header.head.index.hide
         h1.head-title.u-fl
           = config.title
-        include nav.pug
+        include indexNav.pug
     != js('js/particles.min.js')
     != js('js/particles.oli.js')
+    != js('js/indexNav.js')
     
     include ../plugins/google.pug

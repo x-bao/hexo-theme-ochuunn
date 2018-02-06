@@ -1,0 +1,12 @@
+nav.index-nav.u-fr
+  span.index-nav__list
+    i.hidden
+      != 'Blog'
+    each val, index in theme.links
+      -var className = 'index-nav__item ' + index
+      if index == 'Blog'
+        span(class = className): a.index-nav__link(href = val)
+          = index
+      else
+        span(class = className): a.index-nav__link(href = val, target="view_window")
+          = index

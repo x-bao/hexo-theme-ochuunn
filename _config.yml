@@ -4,6 +4,13 @@ menu:
   # sitemap: /sitemap.xml
   # other menus
 
+links: 
+  Github: https://github.com/x-bao
+  Diary: https://meng.bi
+  Blog: /archives
+  Resume: https://meng.bi
+
+
 rss: /atom.xml
 favicon: /img/favicon.ico
 

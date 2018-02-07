@@ -104,4 +104,38 @@
     min-height: 310px
   .post-nav
     display: none
+  .index-nav.u-fr
+    float: none
+    
+  .index-nav__list
+    display: flex
+    justify-content: space-around
+    width: 100%
+    text-align: center
+    position: relative
+    background: transparent
+    font-size: 1rem
+    line-height: 30px
+    margin-top: 8px
+    .hidden
+      display: none
+    .index-nav__item
+      order: 9
+      width: auto
+      position: static
+      background: rgba(255, 255, 255, .1)
+      line-height: 30px
+      transition: top .2s
+      padding: 0 5px
+      > a
+        color: #fff
+        &:hover
+          color: #fff
+    .Blog
+      order: 0
+    .Diary
+      order: 1
+    .Slaughter
+      order: 2
+      
     

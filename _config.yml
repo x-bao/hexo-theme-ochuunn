@@ -5,10 +5,11 @@ menu:
   # other menus
 
 links: 
-  Github: https://github.com/x-bao
-  Diary: https://meng.bi
+  Diary: https://sanbf.cn
+  Slaughter: https://sanbf.cn
   Blog: /archives
-  Resume: https://meng.bi
+  Github: https://github.com/x-bao
+  About: https://sanbf.cn
 
 
 rss: /atom.xml

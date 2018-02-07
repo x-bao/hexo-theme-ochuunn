@@ -26,6 +26,15 @@ $(function () {
 	// i  go index
 	var $body = $('html');
 
+	var isFocused = false;
+	// 输入评论时禁用快捷键
+	$('#comments textarea').focus(() => {
+		isFocused = true
+	});
+	$('#comments textarea').blur(() => {
+		isFocused = false
+	});
+
 	var isKeydown = false;
 	$body.on('keydown', function (e) {
 		// console.log(e.which, 'key down');
@@ -37,7 +46,7 @@ $(function () {
 
 		switch (e.which) {
 			case 74: // j down
-				if (!isKeydown) {
+				if (!isFocused && !isKeydown) {
 					isKeydown = true;
 					requestAnimationFrame(function animate() {
 						var curTop = window.scrollY;
@@ -51,7 +60,7 @@ $(function () {
 				break;
 
 			case 75: // k up
-				if (!isKeydown) {
+				if (!isFocused && !isKeydown) {
 					isKeydown = true;
 					requestAnimationFrame(function animate() {
 						var curTop = window.scrollY;
@@ -67,29 +76,39 @@ $(function () {
 				break;
 				// 16 shift
 			case 84: // t
-				window.scrollToTop(1);
+				if (!isFocused) {
+					window.scrollToTop(1);
+				}
 				break;
 			case 66: // b
-				window.scrollToBottom();
+				if (!isFocused) {
+					window.scrollToBottom();
+				}
 				break;
 			case 78: // n half
-				window.scrollPageDown(1);
+				if (!isFocused) {
+					window.scrollPageDown(1);
+				}
 				break;
 			case 77: // m
-				window.scrollPageUp(1);
+				if (!isFocused) {
+					window.scrollPageUp(1);
+				}
 				break;
 			case 219: // [
-				if (postNavLeft && postNavLeft.href) {
+				if (!isFocused && postNavLeft && postNavLeft.href) {
 					window.location = postNavLeft.href;
 				}
 				break;
 			case 221: // ]
-				if (postnavRight && postnavRight.href) {
+				if (!isFocused && postnavRight && postnavRight.href) {
 					window.location = postnavRight.href;
 				}
 				break;
 			case 72: // h
-				window.location = '/archives';
+				if (!isFocused) {
+					window.location = '/archives';
+				}
 				break;
 		}
 

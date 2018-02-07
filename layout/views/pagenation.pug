@@ -1,7 +1,12 @@
-nav.post-nav
-  if page.prev
-    a.nav-item.prev(href = url_for(page.prev.path))
-        i.icon-arrow-left
-  if page.next
-    a.nav-item.next(href = url_for(page.next.path))
-        i.icon-arrow-right
+if is_post()
+  nav.post-nav
+    if page.prev
+      a.nav-item.prev(href = url_for(page.prev.path))
+          i.icon-arrow-left
+          span.nav-item-title.nav-item-title-left
+            = page.prev.title
+    if page.next
+      a.nav-item.next(href = url_for(page.next.path))
+          i.icon-arrow-right
+          span.nav-item-title.nav-item-title-right
+            = page.next.title

@@ -164,12 +164,34 @@ summary:hover
     font-size: 80px
     color: $gray
     transition: all 350ms ease
-  .nav-item:hover
-    color: $gray-darker
+    &:hover
+      color: $gray-darker
+      .nav-item-title
+        display: block
+    &-title
+      position: absolute
+      top: calc(50% - 8px);
+      font-size: 12px
+      line-height: 1rem
+      width: 11rem;
+      position: absolute;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: none
+    &-title-left
+      left: 75%
+    &-title-right
+      right: 75%
+      text-align: right
   .prev
     left: 15px
+    &:hover
+      transform: translateX(-1rem)
   .next
     right: 15px
+    &:hover
+      transform: translateX(1rem)
   
 .index-nav__list
   display: inline-block

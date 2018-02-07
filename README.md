@@ -1,6 +1,10 @@
-# Ochuunn
+Ochuunn
+=======
 
-## Feature
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
+
+Feature
+-------
 
 * 文章界面很清晰，很适合阅读~
 * Google Search Console
@@ -18,12 +22,14 @@
 	| [ 	| 前一篇文章	|
 	| ] 	| 后一篇文章	|
 
-## Demo
+Demo
+----
 
 [I am Oliver](http://ochukai.me)
 [San Baofeng's](https://sanbf.cn)
 
-## Installation
+Installation
+------------
 
 ```Bash
 $ npm install hexo-renderer-pug --save
@@ -39,17 +45,24 @@ $ git clone https://github.com/ochukai/hexo-theme-ochuunn.git themes/ochuunn
 theme: ochuunn
 ```
 
-## Todo
+Todo
+----
 
 - [ ] 添加 category
 - [ ] 添加 tag 页面
 
-## 更新
+Update
+------
 
 - 修改首页导航，效果更加炫酷
 - 首页导航响应式处理，移动端显示更优秀
 - 文章详情页面添加快速翻页，快速选择前/后一篇文章
 - 加入更多快捷键
+
+License
+-------
+
+MIT is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 
 

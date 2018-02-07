@@ -6,12 +6,12 @@ Ochuunn
 Feature
 -------
 
-* 文章界面很清晰，很适合阅读~
+* 文章界面很清晰，很适合阅读
 * Google Search Console
 * Google Analytics
 * [LiveRe](https://livere.com/) (我去掉了disqus, 国内不翻墙压根连不上)
 * 打赏
-* 页面滚动快捷键 (j, k, t, b, n, m 具体功能自己尝试, console 有提示~)
+* 页面滚动快捷键，`console`下有惊喜😎
 
 	| 快捷键 | 详情		|
 	|:-----:|-----------|
@@ -27,6 +27,7 @@ Demo
 ----
 
 [I am Oliver](http://ochukai.me)
+
 [San Baofeng's](https://sanbf.cn)
 
 Installation

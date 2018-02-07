@@ -64,6 +64,12 @@ Update
 - 使用 [gitment](https://github.com/imsun/gitment) 替换原始的 [LiveRe](https://livere.com/)
 	- 评论更加简介
 	- 支持 **Markdown** 😱😱😱
+- 页面优化
+	- 减小顶部 `padding`，空间利用率提高
+	- 代码块加入语言类型显示，代码类型更清晰
+	- 展现代码块行号，给有利于读码
+	- 代码块样式修改
+	- 优化表格样式，更加简洁
 - bug fix
 	- 快速翻页优化，fix `hover` 后文章标题可能会抖动问题
 	- fix 使用 `gitment` 之后，在填写评论时，绑定的快捷键导致页面滚动问题

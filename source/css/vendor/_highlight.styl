@@ -3,13 +3,44 @@
   // background-color: $highlight-background
   color: $highlight-foreground
   border: 1px solid $border-color
+  position: relative
+  &:hover
+    box-shadow: 0 1px 5px rgba(50,50,50,0.2);
+  &::after
+    position: absolute
+    top: 3px
+    right: 3px
+    padding: 2px 7px
+    font-size: .8rem
+    font-weight: bold
+    color: darken($gray, 10%)
+    text-shadow: none
+    content: 'Code'
+    text-align: right
+
+  for $sign, $text in $code-type-list {
+    &.{$sign}::after {
+      content: $text
+    }
+    // &.{$sign} > figcaption > span::after {
+    //   content: ' · ' + $text
+    // }
+    // &.{$sign} figcaption + table {
+    //   &::after {
+    //     display: none
+    //   }
+    // }
+  }
 
   .gutter
-    color: #666
-    display: none
+    color: #fff
+    text-shadow: none
+    background-color: $highlight-foreground
+    width: 1em
+    text-align: center
 
   .code
-    padding: 1em 45px
+    padding: 15px
 
   figcaption
     margin-bottom: 1em

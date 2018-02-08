@@ -36,6 +36,7 @@ html(lang="zh-CN")
             
     include ../plugins/google.pug
     
+    // 文章详情页才展示评论
     if is_post()
       != js('js/comment')
     != js('js/scroller')

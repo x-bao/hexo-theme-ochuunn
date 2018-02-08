@@ -73,6 +73,7 @@ Update
 - bug fix
 	- 快速翻页优化，fix `hover` 后文章标题可能会抖动问题
 	- fix 使用 `gitment` 之后，在填写评论时，绑定的快捷键导致页面滚动问题
+	- fix 文章列表页没有评论情况下控制台报错
 
 License
 -------

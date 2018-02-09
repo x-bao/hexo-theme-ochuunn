@@ -15,7 +15,7 @@ links:
 rss: /atom.xml
 favicon: /img/favicon.ico
 
-date_format: 'MMMM D, YYYY'
+date_format: 'MM-DD, YYYY'
 
 google_verification: '9uRq2WvEIEs14TFqYBsFj9bQac1_CUiUxlgWvWnNtTo'  # your token
 google_analytics: 'UA-80885450-4'   # your id

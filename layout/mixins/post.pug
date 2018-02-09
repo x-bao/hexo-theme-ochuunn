@@ -14,9 +14,9 @@ mixin post(post, index)
             != post.excerpt
 
     else
+      include gallery.pug 
+      +gallery(post)
       header.post__head  
-        include gallery.pug 
-        +gallery(post)
         
         time.post__time(datetime = date_xml(post.date))
           = date(post.date, theme.date_format)

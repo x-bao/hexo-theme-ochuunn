@@ -26,14 +26,20 @@ $(function () {
 	// i  go index
 	var $body = $('html');
 
-	var isFocused = false;
-	// 输入评论时禁用快捷键
-	$('#comments textarea').focus(() => {
-		isFocused = true
-	});
-	$('#comments textarea').blur(() => {
-		isFocused = false
-	});
+    var isFocused = window.isFocused;
+    
+    const textarea = $('#comments textarea');
+    window.isFocused = isFocused;
+    textarea.focus(() => {
+        console.log('is focused')
+        isFocused = true;
+    });
+    textarea.blur(() => {
+        console.log('is blured')
+        isFocused = false;
+    });
+    
+    isFocused = true;
 
 	var isKeydown = false;
 	$body.on('keydown', function (e) {
@@ -152,7 +158,21 @@ $(function () {
 
 		var $reward = $('.reward-wrapper');
 		$reward.slideToggle();
-	});
+    });
+    
+    var $backToTop = $('#back-to-top');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $backToTop.fadeIn(1000);
+        } else {
+            $backToTop.fadeOut(1000);
+        }
+    });
+
+    $backToTop.click(function () {
+        $('body,html').animate({ scrollTop: 0 });
+    });
 
 	$('body').addClass('queue-in');
 	setTimeout(function() {

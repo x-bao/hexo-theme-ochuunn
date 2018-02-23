@@ -13,7 +13,7 @@
   -webkit-align-items: center
   align-items: center
 
-  header
+  headerparticles-oli-wrapper
     z-index: 10
 
 #particles-oli-wrapper
@@ -114,21 +114,21 @@
   color: #f0f0f0
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-  background-color: #f5f5f5;
+  width: 5px
+  height: 5px
+  background-color: #f5f5f5
 } 
 
 /* 定义滚动条轨道的内阴影+圆角 */
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, .3);
-  background-color: #f5f5f5;
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, .3)
+  background-color: #f5f5f5
 }
 
 /* 定义滑块的内阴影+圆角 */
 ::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, .3);
-  background-color: $color-green;
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, .3)
+  background-color: $color-green
 }
 
 .right p
@@ -176,14 +176,14 @@ summary:hover
         transform: translateX(.5rem)
     &-title
       position: absolute
-      top: calc(50% - 8px);
+      top: calc(50% - 8px)
       font-size: 12px
       line-height: 1rem
-      width: 11rem;
-      position: absolute;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      width: 11rem
+      position: absolute
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
       display: none
       transition: all .2s ease-in
     &-title-left
@@ -226,20 +226,39 @@ summary:hover
         color: $highlight-title + 10%
         // transform: scale(1.2)
   &:hover .index-nav__item
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .075)
   &:hover .Diary
     top: -94px
-    transform: perspective(125px) rotateX(25deg);
+    transform: perspective(125px) rotateX(25deg)
   &:hover .Slaughter
     top: -43px
-    transform: perspective(125px) rotateX(-25deg);
+    transform: perspective(125px) rotateX(-25deg)
   &:hover .Blog
     top: 0
-    transform: perspective(125px) rotateX(25deg);
+    transform: perspective(125px) rotateX(25deg)
   &:hover .Github
     top: 50.1px
-    transform: perspective(125px) rotateX(-25deg);
+    transform: perspective(125px) rotateX(-25deg)
   &:hover .About 
     top: 93.5px
-    transform: perspective(125px) rotateX(25deg);
+    transform: perspective(125px) rotateX(25deg)
+
+#back-to-top
+    display: none
+    position: fixed
+    height: 80px
+    right: 30px
+    bottom: 20px
+    transition-property: transform
+    transition-timing-function: ease-out
+    transition-duration: 0.3s
+    z-index: 10
+    font-size: 30px
+    transform: rotateZ(-90deg)
+    .icon-arrow-right
+        text-shadow: 10px 0 0
+    &:hover
+        cursor: pointer
+        transform: translateY(-5px) rotateZ(-90deg) 
+
 

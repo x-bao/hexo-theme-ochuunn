@@ -8,15 +8,15 @@ html(lang="zh-CN")
       h1.head-title.u-fl: a(href = config.root)
         = config.title
       include nav.pug
-      
-    include pagenation.pug
+
+    if theme.show_jump_to_next
+        include pagenation.pug
 
     main.main
       block main
     
-    div#back-to-top
-        i.icon-arrow-right
-
+    if theme.show_back_to_top
+        include backToTop.pug
     
     footer.foot
       div.foot-copy

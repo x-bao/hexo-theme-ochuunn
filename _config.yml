@@ -11,7 +11,6 @@ links:
   Github: https://github.com/x-bao
   About: https://sanbf.cn
 
-
 rss: /atom.xml
 favicon: /img/favicon.ico
 
@@ -25,6 +24,10 @@ livere_uid: 'MTAyMC8zMzg4OC8xMDQ0MQ=='
 
 start_year: 2017
 
+# custom config
+show_back_to_top: true
+show_jump_to_next: true
+
 # 备案信息
 site_record: '（鄂ICP备17002258号-2）'
 
@@ -33,4 +36,3 @@ reward_images: # add your qr image
   # url: '/img/wechat.png'
 # - type: '支付宝' 
   # url: '/img/wechat.png'
- 

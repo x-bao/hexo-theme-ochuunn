@@ -38,18 +38,7 @@ $(function () {
 			var postnavRight = postNav.querySelector('.next');
         }
 
-        if (bindOnce) {
-            const textarea = $('#comments textarea');
-            textarea.focus(() => {
-                // console.log('is focused...',);
-                isFocused = true;
-            });
-            textarea.blur(() => {
-                // console.log('is blured...');
-                isFocused = false;
-            });
-            bindOnce = 0;
-        }
+        isFocused = document.activeElement.tagName == 'TEXTAREA';
 
 		switch (e.which) {
 			case 74: // j down

@@ -18,6 +18,8 @@ date_format: 'MM-DD, YYYY'
 
 google_verification: 'yVLudwcqIQlJbqhCeKLJZ8W_I1OJeVE8p30fz1mRhLM'  # your token
 google_analytics: 'UA-80885450-5'   # your id
+baidu_analytics: 'f00d6c21ad53bcc5d93c0a390afc84a7'
+baidu_verification: 'lGmVtKnPAU'
 
 livere_id: 'city'
 livere_uid: 'MTAyMC8zMzg4OC8xMDQ0MQ=='

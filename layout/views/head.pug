@@ -6,6 +6,9 @@ link(rel='alternate', href = theme.url, hreflang='zh-Hans')
 if theme.google_verification
   meta(name="google-site-verification", content = theme.google_verification)
 
+if theme.baidu_verification
+    meta(name="baidu-site-verification", content = theme.baidu_verification)
+
 if config.author
   meta(name='author', content = config.author)
 
@@ -20,6 +23,8 @@ if theme.rss
 
 if theme.favicon
   link(rel="icon", href = theme.favicon)
+
+include ../plugins/baidu.pug
 
 block head
 

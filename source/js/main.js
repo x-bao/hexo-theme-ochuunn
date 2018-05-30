@@ -153,9 +153,9 @@ $(function () {
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 100) {
-            $backToTop.fadeIn(1000);
+            $backToTop.fadeIn(300);
         } else {
-            $backToTop.fadeOut(1000);
+            $backToTop.fadeOut(300);
         }
     });
 
@@ -166,6 +166,17 @@ $(function () {
     $('body').addClass('queue-in');
     setTimeout(function () {
         $('body').css({ opacity: 1 }).removeClass('queue-in');
-    }, 500);
+    }, 300);
+
+    $('.head-title.u-fl > a').on('click', function (e) {
+        e.preventDefault();
+        var $this = $(this);
+
+        $('body').animate({
+            opacity: 0
+        }, 300, function () {
+            window.location.href = $this.attr('href');
+        });
+    });
 
 });

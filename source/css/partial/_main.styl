@@ -225,6 +225,8 @@ summary:hover
       transition: scale .5s ease
       &:hover
         color: $highlight-title + 10%
+  &>.Blog
+    z-index: 1
   &:hover .index-nav__item
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .075)
   &:hover .Diary
@@ -240,6 +242,23 @@ summary:hover
     top: 50px
     transform: perspective(125px) rotateX(-25deg)
   &:hover .About 
+    top: 93px
+    transform: perspective(125px) rotateX(25deg)
+  &.open .index-nav__item
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .075)
+  &.open .Diary
+    top: -93px
+    transform: perspective(125px) rotateX(25deg)
+  &.open .Slaughter
+    top: -43px
+    transform: perspective(125px) rotateX(-25deg)
+  &.open .Blog
+    top: 0
+    transform: perspective(125px) rotateX(25deg)
+  &.open .Github
+    top: 50px
+    transform: perspective(125px) rotateX(-25deg)
+  &.open .About 
     top: 93px
     transform: perspective(125px) rotateX(25deg)
 

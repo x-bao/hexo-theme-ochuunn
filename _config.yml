@@ -1,13 +1,13 @@
 # head
 menu:
-  カタログ/（目录）: /archives
+  カタログ/（目录）: /archives/
   # sitemap: /sitemap.xml
   # other menus
 
 links: 
-  Blog: /archives
+  Blog: /archives/
   Diary: https://sanbaofengs.com
-  Slaughter: /slaughter
+  Slaughter: /slaughter/
   Github: https://github.com/x-bao
   About: https://sanbaofengs.com
 

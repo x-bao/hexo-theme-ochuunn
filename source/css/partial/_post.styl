@@ -69,7 +69,12 @@
   margin-top: 30px
 
   .headerlink
-    display: inline-block
+    display: none
+    float: right;
+    margin-left: 5px;
+    &::after
+        content: '#'
+        float: right;
 
   img
     cursor: pointer
@@ -103,9 +108,14 @@
     pre
       margin: 0
 
-  h1
+  h1,
+  h2,
+  h3
     // 1.6 * 16
     font-size-rem(25.6)
+    display: inline-block
+    &:hover .headerlink
+        display: inline-block
 
   h2
     // 1.4 * 16

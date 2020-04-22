@@ -15,6 +15,8 @@
 
   headerparticles-oli-wrapper
     z-index: 10
+  .head.index
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
 
 #particles-oli-wrapper
   position: fixed
@@ -35,7 +37,7 @@
 .foot
   padding: 0 50px
   height: 120px
-  background-color: #399c9c
+  background-color: #60bdcf
   line-height: (@height)
   box-sizing: border-box
   text-shadow: 0 1px 0 rgba(0, 0, 0, .125)
@@ -52,9 +54,6 @@
     color: #fff
     &:hover
       text-decoration: underline
-
-.index-full-page
-  overflow: hidden
 
 .foot-theme
   margin-top: 1rem
@@ -229,10 +228,12 @@ summary:hover
     z-index: 1
   &:hover .index-nav__item
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .075)
+    &:hover
+      background-color: #f9f9f9;
   &:hover .Diary
     top: -93px
     transform: perspective(125px) rotateX(25deg)
-  &:hover .Slaughter
+  &:hover .Arts
     top: -43px
     transform: perspective(125px) rotateX(-25deg)
   &:hover .Blog
@@ -249,7 +250,7 @@ summary:hover
   &.open .Diary
     top: -93px
     transform: perspective(125px) rotateX(25deg)
-  &.open .Slaughter
+  &.open .Arts
     top: -43px
     transform: perspective(125px) rotateX(-25deg)
   &.open .Blog
